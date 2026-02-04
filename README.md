@@ -1,24 +1,26 @@
 ---
-title: mac-runbook
-id: mac-runbook
+title: mac-agent-system-runbook
+id: mac-agent-system-runbook
 tags:
   - macos
   - runbook
+  - system-maintenance
 created: 2026-02-04
 updated: 2026-02-04
 status: stable
-summary: macOS 系统维护/工具链配置的可检索手册库。
+summary: macOS 系统维护与工具链配置的可检索手册库。
 ---
 
-# mac-runbook
+# mac-agent-system-runbook
 
-把零散的系统维护知识沉淀为可检索的手册，减少“脏活（dirty work）”在日常系统维护中的占比，让使用者把时间更多花在具体业务上。
+把零散的系统维护知识沉淀为可检索的手册，减少"脏活（dirty work）"在日常系统维护中的占比，让使用者把时间更多花在具体业务上。
 
 ## 适用范围
 
 - macOS 机器的日常维护与开发环境维护
 - Shell/终端/工具链（zsh、starship、mise、pnpm、uv、micromamba 等）
 - 常用软件与快捷键整理
+- OpenCode agent 配置与自动化任务
 
 ## 目录约定
 
@@ -36,8 +38,9 @@ summary: macOS 系统维护/工具链配置的可检索手册库。
 ## 快速入口
 
 - `zsh-fishlike.md`：zsh 中获得接近 fish 的补全/高亮体验（含补全更新方式）
-- `musicfox.md`：go-musicfox（musicfox）安装、配置与快捷键
+- `musicfox.md`：go-musicfox 安装、配置与快捷键
 - `opencode-skill-global.md`：OpenCode 全局 skill 创建与注册（含脚本与注意点）
+- `AGENT.md`：OpenCode agent 配置与指令集
 
 ## 维护方式
 
