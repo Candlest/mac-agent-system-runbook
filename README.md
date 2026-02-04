@@ -37,10 +37,10 @@ summary: macOS 系统维护与工具链配置的可检索手册库。
 
 ## 快速入口
 
-- `zsh-fishlike.md`：zsh 中获得接近 fish 的补全/高亮体验（含补全更新方式）
-- `musicfox.md`：go-musicfox 安装、配置与快捷键
-- `opencode-skill-global.md`：OpenCode 全局 skill 创建与注册（含脚本与注意点）
-- `AGENT.md`：OpenCode agent 配置与指令集
+- [zsh-fishlike](./zsh-fishlike.md)：zsh 中获得接近 fish 的补全/高亮体验（含补全更新方式）
+- [musicfox](./musicfox.md)：go-musicfox 安装、配置与快捷键
+- [opencode-skill-global](./opencode-skill-global.md)：OpenCode 全局 skill 创建与注册（含脚本与注意点）
+- [AGENT](./AGENT.md)：OpenCode agent 配置与指令集
 
 ## 维护方式
 

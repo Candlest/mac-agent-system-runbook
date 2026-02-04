@@ -13,7 +13,7 @@ summary: 记录在 mac-runbook 下生成/维护文档时的约定与工作流。
 
 # AGENT.md
 
-本文件定义 `~/Documents/mac-runbook` 的写作规范与维护流程，用于把“系统维护/工具链配置”的重复劳动沉淀成可检索的手册。
+本文件定义 `~/Documents/mac-agent-system-runbook` 的写作规范与维护流程，用于把"系统维护/工具链配置"的重复劳动沉淀成可检索的手册。
 
 ## 核心原则
 
@@ -55,11 +55,24 @@ summary: 记录在 mac-runbook 下生成/维护文档时的约定与工作流。
 ## 合并与弃用（简并同类内容）
 
 - 同主题多份文档：合并为一个主文档
-- 被合并的旧文档：保留为“入口页”，内容只保留指向主文档的说明
+- 被合并的旧文档：保留为"入口页"，内容只保留指向主文档的说明
   - frontmatter 设置 `status: deprecated`
   - 填写 `superseded_by: <newfile>.md`
 
 ## 更新流程
 
 - 修改任意文档后，更新其 `updated` 日期
-- 如果新增文档值得常用：把它加入 `README.md` 的“快速入口”
+- 如果新增文档值得常用：把它加入 `README.md` 的"快速入口"
+
+---
+
+## 给 AI Agent 的提醒
+
+当你在本仓库（`~/Documents/mac-agent-system-runbook`）阅读或修改文档时，请遵循以下约定：
+
+1. **先读 Frontmatter**：所有文档顶部都有 YAML frontmatter，包含 `id`、`tags`、`status`、`summary` 等字段
+2. **保持命名规范**：新增文件用 `kebab-case`，如 `theme-topic.md`
+3. **更新时序字段**：修改文档时，务必更新 `updated` 字段为当天日期
+4. **用相对链接**：`README.md` 中的快速入口使用 Markdown 相对超链接（`[](./file.md)` 格式）
+5. **合并/弃用时**：旧文档 frontmatter 需设置 `status: deprecated` 并填写 `superseded_by`
+6. **勿用系统 Python**：所有 Python 依赖必须通过 `uv` 管理，禁止使用系统 `pip3`
