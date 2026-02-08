@@ -6,7 +6,7 @@ tags:
   - runbook
   - system-maintenance
 created: 2026-02-04
-updated: 2026-02-04
+updated: 2026-02-08
 status: stable
 summary: macOS 系统维护与工具链配置的可检索手册库。
 ---
@@ -40,6 +40,7 @@ summary: macOS 系统维护与工具链配置的可检索手册库。
 - [zsh-fishlike](./zsh-fishlike.md)：zsh 中获得接近 fish 的补全/高亮体验（含补全更新方式）
 - [musicfox](./musicfox.md)：go-musicfox 安装、配置与快捷键
 - [opencode-skill-global](./opencode-skill-global.md)：OpenCode 全局 skill 创建与注册（含脚本与注意点）
+- [chrome-devtools-mcp](./chrome-devtools-mcp.md)：Chrome DevTools MCP 服务器配置与维护（含多种连接模式与故障排查）
 - [AGENT](./AGENT.md)：OpenCode agent 配置与指令集
 - [vscode-code-command-reset](./vscode-code-command-reset.md)：VS Code `code` 命令重启失效修复
 
