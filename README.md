@@ -37,6 +37,8 @@ summary: macOS 系统维护与工具链配置的可检索手册库。
 |------|------|
 | [zsh-fishlike](./zsh-fishlike.md) | zsh 中获得接近 fish 的补全/高亮体验 |
 | [pi-agent-glm-minimax-keychain](./pi-agent-glm-minimax-keychain.md) | pi agent 配置 GLM + MiniMax，并用 Keychain 管理 API key |
+| [pi-agent-minimax-cn-env-only](./pi-agent-minimax-cn-env-only.md) | pi 仅用环境变量/Keychain 使用 MiniMax 中国区（minimax-cn），不写 auth.json |
+| [pi-agent-index](./pi-agent-index.md) | pi agent 相关 runbook 索引与配置要点汇总 |
 
 ### 网络代理
 

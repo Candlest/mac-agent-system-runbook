@@ -56,7 +56,7 @@ summary: 为 pi agent 增加 GLM / minimaxi.com 模型，并用 macOS Keychain �
     "minimax-com": {
       "baseUrl": "https://api.minimaxi.com/v1",
       "api": "openai-completions",
-      "apiKey": "MINIMAX_API_KEY",
+      "apiKey": "!security find-generic-password -a $(whoami) -s minimax-api-key -w",
       "authHeader": true,
       "models": [
         { "id": "MiniMax-M2.5", "name": "MiniMax M2.5 (minimaxi.com)", "reasoning": true },
@@ -66,6 +66,8 @@ summary: 为 pi agent 增加 GLM / minimaxi.com 模型，并用 macOS Keychain �
   }
 }
 ```
+
+*pi agent 构造 minimaxi.com 请求时会执行 `security find-generic-password -a $(whoami) -s minimax-api-key -w` 读取 Keychain，确保即便直接从 macOS UI 启动 pi（未 source dotfiles），也能在 Authorization 头里带上 `Bearer <密钥>`。首次运行会弹窗要求允许访问，之后会记住。*
 
 ### 验证
 
